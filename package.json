@@ -1,0 +1,23 @@
+{
+  "name": "sahyog-supabase",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "domain": "node scripts/generate-domain.mjs",
+    "test": "node --test tests/store.test.js tests/backend.test.js tests/database.test.js",
+    "test:browser": "node tests/cloud-browser.cjs",
+    "deploy:backend": "node scripts/deploy.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.13",
+    "@playwright/test": "1.64.1",
+    "esbuild": "0.28.2",
+    "supabase": "2.122.0"
+  }
+}
